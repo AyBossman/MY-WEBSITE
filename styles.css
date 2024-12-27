@@ -1,0 +1,170 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Ensure padding and borders don't affect element sizes */
+}
+
+.main {
+    width: 100%;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.5) 50%, rgba(0, 0, 0, 0.5) 50%), 
+                url(1.png);
+    background-position: center;
+    background-size: cover;
+    height: 100vh; /* Fit to viewport height */
+}
+
+.navbar {
+    width: 100%; /* Full width for responsiveness */
+    max-width: 1200px; /* Restrict width for larger screens */
+    height: 75px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Spread elements out */
+}
+
+.icon {
+    height: 70px;
+}
+
+.logo {
+    color: #ff7200;
+    font-size: 35px;
+    font-family: Arial, sans-serif; /* Added a fallback font */
+    padding-left: 20px;
+    line-height: 70px; /* Align vertically with navbar */
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu ul {
+    display: flex;
+    gap: 62px; /* Replaced margin for better spacing control */
+}
+
+.menu ul li {
+    list-style: none;
+    font-size: 14px;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    transition: color 0.4s ease-out; /* Explicitly specify property for better performance */
+}
+
+.menu ul li a:hover {
+    color: #ff7200;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+    margin-left: auto; /* Push to the right */
+}
+
+.srch {
+    font-family: 'Times New Roman', serif; /* Added a fallback font */
+    width: 200px;
+    height: 40px;
+    background: transparent;
+    border: 1px solid #ff7200;
+    border-right: none;
+    color: #fff;
+    font-size: 16px;
+    padding: 0 10px; /* Adjusted padding for consistent spacing */
+    border-radius: 5px 0 0 5px; /* Rounded corners for left side */
+}
+
+.btn {
+    width: auto; /* Set auto width to match content */
+    height: 40px;
+    background: #ff7200;
+    border: 2px solid #ff7200;
+    color: #fff;
+    font-size: 15px;
+    padding: 0 15px; /* Added padding for better button appearance */
+    border-radius: 0 5px 5px 0; /* Rounded corners for right side */
+    cursor: pointer; /* Indicate clickability */
+}
+
+.btn:hover {
+    background: #e66a00; /* Slightly darker hover effect */
+}
+
+.btn:focus{
+    outline: none;
+}
+
+.srch:focus{
+    outline: none;
+}
+
+.content{
+    width: 1200px;
+    height: auto;
+    margin: auto;
+    color: #fff;
+    position: relative;
+}
+
+.content .par{
+    padding-left: 20px;
+    padding-bottom: 25px;
+    font-family: Arial;
+    letter-spacing: 1.2px;
+    line-height: 30px;
+}
+
+.content h1{
+    font-family: 'Times New Roman';
+    font-size: 50px;
+    padding-left: 20px;
+    margin-top: 9%;
+    letter-spacing: 2px;
+}
+
+.content .cn{
+    width: 160px;
+    height: 40px;
+    background: #ff7200;
+    border: none;
+    margin-bottom: 10px;
+    margin-left: 20px;
+    font-size: 18px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .4s ease;
+}
+
+.content .cn a{
+    text-decoration: none;
+    color: #000;
+    transition: .3s ease;
+}
+
+.cn:hover{
+    background: #fff;
+}
+
+.content span{
+    color:#ff7200;
+    font-size: 60px;
+}
+
+.form{
+    width: 250px;
+    height: 380px;
+    background: linear-gradient(to top, rgba(0,0,0,0.8)50%, rgba(0,0,0,0.8)50%);
+    position: absolute;
+    top: -20px;
+    left: 870px;
+    border: 10px;
+    padding: 25px;
+}
